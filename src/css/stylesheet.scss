@@ -87,8 +87,15 @@
         margin-top: 10px;
     }
 
+    &__cart {
+        padding: 25px;
+        margin: 15px;
+        border: 1px solid $color-secondary-3;
+    }
+
     .cart-row {
         display: flex;
+        justify-content: flex-end;
     }
 
     .cart-item {
@@ -97,8 +104,7 @@
 
     .cart-price {
         width: 20%;
-        font-size: 1.2em;
-        color: #333;
+        @include ecartfont($h6, $color-primary-1);
     }
 
     .cart-quantity {
@@ -106,13 +112,14 @@
     }
 
     .cart-item-title {
-        color: #333;
-        margin-left: 0.5em;
-        font-size: 1.2em;
+        margin-left: 10px;
+        @include ecartfont($h6, $color-primary-1);
+        white-space: nowrap;
+
     }
 
     .cart-item-image {
-        width: 75px;
+        width: 25px;
         height: auto;
         border-radius: 10px;
     }
